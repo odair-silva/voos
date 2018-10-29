@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="/stylesheets/reset.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="/stylesheets/index.css" rel="stylesheet"> 
+    <title>Vôos</title>
+</head>
+<body>
+    <div class="formulario">
+    <form>
+        <div class="form-group">
+          <label for="idaviao">ID Avião</label>
+          <input class="form-control form-control-sm" id="idAviao">
+        </div>
+        <div class="form-group">
+          <label for="qtdassentos">Quantidade de assentos</label>
+          <input type="number" class="form-control form-control-sm" id="qtdAssentos">
+        </div>
+        <div class="form-group">
+            <label for="datainicio">Data início</label>
+            <input type="date" class="form-control form-control-sm" id="dataInicio">
+        </div>
+        <div class="form-group">
+            <label for="horainicio">Hora início</label>
+            <input type="datetime" class="form-control form-control-sm" id="horaInicio">
+        </div>
+        <div class="form-group">
+            <label for="localsaida">Local de saída</label>
+            <input class="form-control form-control-sm" id="localSaida">
+        </div>
+        <div class="form-group">
+            <label for="datafim">Data fim</label>
+            <input type="date" class="form-control form-control-sm" id="dataFim">
+        </div>
+        <div class="form-group">
+            <label for="horafim">Hora Fim</label>
+            <input type="datetime" class="form-control form-control-sm" id="horaFim">
+        </div>
+        <div class="form-group">
+            <label for="localchegada">Local de chegada</label>
+            <input class="form-control form-control-sm" id="localChegada">
+        </div>
+        <div class="form-group">
+            <label for="status">Status do Vôo</label>
+            <input class="form-control form-control-sm" id="Status">
+        </div>
+        <div class="form-group">
+            <label for="observ">Observação</label>
+            <input class="form-control form-control-sm" id="Observ">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <div class="tabela">
+            <h5>Atualizado pelo RPA</h5>
+            <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col"># Vôo</th>
+                        <th scope="col">Destino</th>
+                        <th scope="col">Horário</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Salvador</td>
+                        <td>12:30</td>
+                        <td>Confirmado</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Recife</td>
+                        <td>16:45</td>
+                        <td>Cancelado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+    </div>
+
+    <div class="tabela">
+            <h5>Atualizado pelo webMethods</h5>
+            <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col"># Vôo</th>
+                        <th scope="col">Destino</th>
+                        <th scope="col">Horário</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Salvador</td>
+                        <td>12:30</td>
+                        <td>Confirmado</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Recife</td>
+                        <td>16:45</td>
+                        <td>Cancelado</td>
+                      </tr>
+                    </tbody>
+                  </table>
+    </div>
+    
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

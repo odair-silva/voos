@@ -1,0 +1,25 @@
+.formulario {
+    width: 30%;
+    padding-left: 3ch;
+    padding-top: 3ch;
+    padding-bottom: 3ch;
+}
+
+.form-group, .tabela{
+    font-size: 1.5ch;
+}
+
+.tabela {
+    width: 30%;
+    padding-left: 3ch;
+    padding-top: 3ch;
+    padding-bottom: 3ch;
+}
+
+body {
+    display: flex;
+}
+
+h5 {
+    text-align: center;
+}
