@@ -10,6 +10,10 @@ voosDAO.prototype.vooInsere = function(voo, callback) {
     this._connection.query('INSERT INTO voos SET ?', voo, callback);
 }
 
+voosDAO.prototype.vooLe = function(callback) {
+    this._connection.query('SELECT COUNT(*) FROM voos', callback);
+}
+
 // MedicosDAO.prototype.medicosDeleta = function(callback) {
 //     this._connection.query('DELETE FROM medicos', callback);
 // }

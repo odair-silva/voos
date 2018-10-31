@@ -9,53 +9,53 @@
 </head>
 <body>
     <div class="formulario">
-    <form action="/submete" method="post">
+    <form action="/submete" method="post" id="formulario">
         <div class="form-group">
           <label for="idaviao">ID Avião</label>
-          <input class="form-control form-control-sm" id="idAviao">
+          <input name="id_aviao" class="form-control form-control-sm" id="idAviao">
         </div>
         <div class="form-group">
-          <label for="qtdassentos">Quantidade de assentos</label>
+          <label for="qtd_assentos">Quantidade de assentos</label>
           <input type="number" class="form-control form-control-sm" id="qtdAssentos">
         </div>
         <div class="form-group">
             <label for="datainicio">Data início</label>
-            <input type="date" class="form-control form-control-sm" id="dataInicio">
+            <input name="data_inicio" type="date" class="form-control form-control-sm" id="dataInicio">
         </div>
         <div class="form-group">
             <label for="horainicio">Hora início</label>
-            <input type="datetime" class="form-control form-control-sm" id="horaInicio">
+            <input name="hora_inicio" type="datetime" class="form-control form-control-sm" id="horaInicio">
         </div>
         <div class="form-group">
             <label for="localsaida">Local de saída</label>
-            <input class="form-control form-control-sm" id="localSaida">
+            <input name="local_saida" class="form-control form-control-sm" id="localSaida">
         </div>
         <div class="form-group">
             <label for="datafim">Data fim</label>
-            <input type="date" class="form-control form-control-sm" id="dataFim">
+            <input name="data_fim" type="date" class="form-control form-control-sm" id="dataFim">
         </div>
         <div class="form-group">
             <label for="horafim">Hora Fim</label>
-            <input type="datetime" class="form-control form-control-sm" id="horaFim">
+            <input name="hora_fim" type="datetime" class="form-control form-control-sm" id="horaFim">
         </div>
         <div class="form-group">
             <label for="localchegada">Local de chegada</label>
-            <input class="form-control form-control-sm" id="localChegada">
+            <input name="local_chegada" class="form-control form-control-sm" id="localChegada">
         </div>
         <div class="form-group">
             <label for="status">Status do Vôo</label>
-            <input class="form-control form-control-sm" id="Status">
+            <input name="status" class="form-control form-control-sm" id="Status">
         </div>
         <div class="form-group">
             <label for="observ">Observação</label>
-            <input class="form-control form-control-sm" id="Observ">
+            <input name="motivo" class="form-control form-control-sm" id="Observ">
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
 
-    <div class="tabela">
+    <div class="tabela" id="tabela_rpa">
             <h5>Atualizado pelo RPA</h5>
             <table class="table table-hover">
                     <thead>
@@ -83,7 +83,7 @@
                   </table>
     </div>
 
-    <div class="tabela">
+    <div class="tabela" id="tabela_wm">
             <h5>Atualizado pelo webMethods</h5>
             <table class="table table-hover">
                     <thead>
@@ -110,11 +110,15 @@
                     </tbody>
                   </table>
     </div>
+    <div>
+      <button class="btn btn-primary" type="submit">Atualiza</button>
+    </div>
     
     
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/javascript/adicionaVooTabela.js"></script>
 </body>
 </html>

@@ -9,17 +9,27 @@ module.exports = function(app){
         var voo = req.body;
         console.log(voo);
 
-        // var connection = app.infra.connectionFactoryRPA();
-        // var vooDAO = new app.infra.voosDAO(connection);
+        var connection = app.infra.connectionFactoryRPA();
+        var vooDAO = new app.infra.voosDAO(connection);
 
-        // vooDAO.vooInsere(voo, function(err, results) {
-        //     console.log(err);
-        //     res.redirect("/index")
-            
-        // });
+        vooDAO.vooInsere(voo, function(err, results) {
+            // console.log(err);
+            res.status(200).redirect('/');
+        });
 
-        res.status(200).render('index');
-        // connection.end();
+        connection.end();
+    });
+
+    app.get('/leitura', function(req, res){
+        var connection = app.infra.connectionFactoryRPA();
+        var vooDAO = new app.infra.voosDAO(connection);
+
+        vooDAO.vooLe(function(err, results) {
+            // console.log(err);
+            console.log(results);
+        });
+        // res.status(200).render('index');
+        connection.end();
     });
 
 }
