@@ -2,11 +2,17 @@
 //     document.getElementById("frm1").submit();
 // }
 
-// setInterval(function() {
-//     var ajax = new XMLHttpRequest();
-//     ajax.open("GET", "/leitura", true);
-//     ajax.send();
-// }, 1000);
+var botaoAtualiza = document.querySelector("#btn-atualiza");
+botaoAtualiza.addEventListener("click", function(event){
+    event.preventDefault();
+    
+    var ajax = new XMLHttpRequest();
+    ajax.open("GET", "/leitura", true);
+    ajax.send();
+    ajax.open("GET", "/", true);
+    ajax.send();
+});
+
 
 
 // function montaTr(paciente){
